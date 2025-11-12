@@ -1,0 +1,59 @@
+a {
+  text-decoration: none;
+  color: #000000;
+}
+a:link {
+  color: #000000;
+}
+a:hover {
+  color: #f00000;
+}
+
+#header {
+  display: flex;
+  max-width: 1360px;
+  min-width: 15%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+#logo {
+  margin-top: 5px;
+  width: 285px;
+}
+
+#bingForm {
+  margin-top: 15px;
+}
+
+#txtbing {
+  width: 365px;
+  height: 27px;
+  margin: 0px;
+  border: 1px solid;
+}
+#subbing {
+  min-width: 43px;
+  height: 30px;
+  border: 1px solid gray;
+  margin: 0px;
+  font-size: 14px;
+  color: #000000;
+}
+
+#nav {
+  display: flex;
+  max-width: 1360px;
+  min-width: 15%;
+  margin: auto;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#main {
+  display: flex;
+  max-width: 1360px;
+  min-width: 15%;
+  margin: auto;
+  flex-wrap: wrap;
+}
