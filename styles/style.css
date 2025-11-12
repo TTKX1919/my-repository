@@ -9,7 +9,7 @@ a:hover {
   color: #f00000;
 }
 
-#navicon {
+#header {
   display: flex;
   max-width: 1360px;
   min-width: 15%;
@@ -41,7 +41,7 @@ a:hover {
   color: #000000;
 }
 
-#titlecon {
+#nav {
   display: flex;
   max-width: 1360px;
   min-width: 15%;
@@ -50,7 +50,7 @@ a:hover {
   align-items: center;
 }
 
-#maincon {
+#main {
   display: flex;
   max-width: 1360px;
   min-width: 15%;
