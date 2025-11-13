@@ -1,0 +1,37 @@
+#mybody {
+  background-color: black;
+  color: white;
+}
+
+.textlink {
+  color: red;
+}
+
+#tl {
+  width: 300px;
+}
+
+#header {
+  display: flex;
+  max-width: 1360px;
+  min-width: 15%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+#nav {
+  display: flex;
+  max-width: 1360px;
+  min-width: 15%;
+  margin: auto;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#main {
+  display: flex;
+  max-width: 1360px;
+  min-width: 15%;
+  margin: auto;
+  flex-wrap: wrap;
+}
