@@ -45,6 +45,7 @@ a:hover {
   display: flex;
   max-width: 1360px;
   min-width: 15%;
+  height: 40px;
   margin: auto;
   flex-wrap: wrap;
   align-items: center;
