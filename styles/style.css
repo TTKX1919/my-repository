@@ -24,18 +24,25 @@ a:hover {
 #txtbing {
   width: 365px;
   height: 27px;
-  border: 1px solid gray;
+  font-size: 16px;
+  border: 1px solid grey;
   border-radius: 15px;
+  color: black;
 }
 
 #subbing {
   width: 43px;
   height: 30px;
-  border: 1px solid gray;
+  border: 0px;
   margin: 0px;
   font-size: 14px;
-  color: #000000;
+  color: #ffffff;
   border-radius: 15px;
+  background-color: black;
+}
+
+#subbing:hover {
+  background: gray;
 }
 
 #nav {
