@@ -32,7 +32,7 @@ a:hover {
 
 #subbing {
   width: 43px;
-  height: 30px;
+  height: 32px;
   border: 0px;
   margin: 0px;
   font-size: 14px;
@@ -65,4 +65,7 @@ a:hover {
 #blank {
   width: 100%;
   height: 10px;
+}
+
+h1 {
 }
