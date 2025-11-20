@@ -1,7 +1,7 @@
 window.onload = function autoviewtext() {
   var textArea = document.getElementById("text1");
   textArea.value =
-    "示例：2<math><msqrt>x</msqrt></math>=y x=100 &#8756;y=2<math><msqrt>100</msqrt></math>=20，点击键盘上的空格显示：";
+    "示例：2<math><msqrt>x</msqrt></math>=y x=100 &#8756;y=2<math><msqrt>100</msqrt></math>=20 <!--点击clear按钮清除示例；在文本框内点击键盘上的空格键显示示例-->";
   textArea.addEventListener("input", (event) => {
     var output = document.getElementById("viewarea");
     output.innerHTML = event.target.value;
