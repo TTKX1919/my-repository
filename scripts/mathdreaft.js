@@ -1,7 +1,7 @@
 window.onload = function autoviewtext() {
   var textArea = document.getElementById("text1");
   textArea.value =
-    "示例：2<math><msqrt>x</msqrt></math>=y x=100 &#8756;y=2<math><msqrt>100</msqrt></math>=20 <!--点击clear按钮清除示例；在文本框内点击键盘上的空格键显示示例-->";
+    "示例：2<math><mroot><mi>x</mi><mn></mn></mroot></math>=y x=100 &#8756;y=2<math><mroot><mi>100</mi><mn></mn></mroot></math>=20 <!--点击clear按钮清除示例；在文本框内点击键盘上的空格键显示示例-->";
   textArea.addEventListener("input", (event) => {
     var output = document.getElementById("viewarea");
     output.innerHTML = event.target.value;
@@ -33,16 +33,17 @@ function msub() {
 }
 function msqrt() {
   var textArea = document.getElementById("text1");
-  textArea.value = textArea.value + "<math><msqrt></msqrt></math>";
+  textArea.value =
+    textArea.value + "<math><mroot><mi></mi><mn></mn></mroot></math>";
   textArea.addEventListener("input", (event) => {
     var output = document.getElementById("viewarea");
     output.innerHTML = event.target.value;
   });
   const length = textArea.value.length;
-  textArea.selectionEnd = length - 15;
+  textArea.selectionEnd = length - 29;
   textArea.focus();
 }
-function mroot() {
+function mroot3() {
   var textArea = document.getElementById("text1");
   textArea.value =
     textArea.value + "<math><mroot><mi></mi><mn>3</mn></mroot></math>";
