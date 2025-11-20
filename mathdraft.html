@@ -54,22 +54,10 @@
       <div id="blank"></div>
       <div id="buttons">
         <h1>这是一个用来记草稿的<abbr>html页面</abbr>：</h1>
-        <em>点击黑色按钮在文本末尾添加html实体字符；点击br按钮添加换行符；</em>
-        <button class="buttons" onclick="madd()">&#43;</button
-        ><button class="buttons" onclick="mreduce()">&#45;</button
-        ><button class="buttons" onclick="mride()">&#42;</button
-        ><button class="buttons" onclick="mdivide()">&#47;</button
-        ><button class="buttons" onclick="mequal()">&#61;</button
+        <em
+          >点击黑色按钮在文本末尾添加html实体字符；点击br按钮文本末尾添加换行符；</em
         ><button class="buttons" onclick="msup()">sup</button
         ><button class="buttons" onclick="msub()">sub</button
-        ><button class="buttons" onclick="mlparenthesis()">&#40;</button
-        ><button class="buttons" onclick="mrparenthesis()">&#41;</button
-        ><button class="buttons" onclick="mlbracket()">&#91;</button
-        ><button class="buttons" onclick="mrbracket()">&#93;</button
-        ><button class="buttons" onclick="mlbrace()">&#123;</button
-        ><button class="buttons" onclick="mrbrace()">&#125;</button
-        ><button class="buttons" onclick="mlabracket()">&#60;</button
-        ><button class="buttons" onclick="mrabracket()">&#62;</button
         ><button class="buttons" onclick="msqrt()">
           <math><msqrt></msqrt></math></button
         ><button class="buttons" onclick="mroot()">
@@ -77,13 +65,34 @@
             ><mroot><mi></mi><mn>3</mn></mroot></math
           >
         </button>
-        <button class="buttons" onclick="mareduce()">&#177;</button
-        ><em
-          ><br />点击clear按钮清空文本域；点击refresh-page按钮刷新页面；点击view按钮或黑色按钮，显示文本框内容到右侧。</em
+        <button class="buttons" onclick="mareduce()">&#177;</button>
+        <button class="buttons" onclick="mcone()">&#9312;</button
+        ><button class="buttons" onclick="mctwo()">&#9313;</button
+        ><button class="buttons" onclick="mcthree()">&#9314;</button
+        ><button class="buttons" onclick="mcfour()">&#9315;</button
+        ><button class="buttons" onclick="mcfive()">&#9316;</button
+        ><button class="buttons" onclick="mcesign()">&#128;</button
+        ><button class="buttons" onclick="mpmille()">&#137;</button
+        ><em><br />点击clear按钮清空文本域；点击refresh-page按钮刷新页面；</em
+        ><button class="buttons" onclick="mbullet()">&#149;</button
+        ><button class="buttons" onclick="mtrademark()">&#153;</button
+        ><button class="buttons" onclick="mpound()">&#163;</button
+        ><button class="buttons" onclick="myen()">&#165;</button
+        ><button class="buttons" onclick="mcopyright()">&#169;</button
+        ><button class="buttons" onclick="mrtrademark()">&#174;</button
+        ><button class="buttons" onclick="minfinity()">&#8734;</button
+        ><button class="buttons" onclick="mangle()">&#8736;</button
+        ><button class="buttons" onclick="mbecause()">&#8757;</button
+        ><button class="buttons" onclick="mtherefore()">&#8756;</button
+        ><button class="buttons" onclick="maequal()">&#8776;</button
+        ><button class="buttons" onclick="mnequal()">&#8800;</button
+        ><button class="buttons" onclick="mloequal()">&#8804;</button
+        ><button class="buttons" onclick="mgoequal()">&#8805;</button
+        ><button class="buttons" onclick="mperpendicular()">&#8869;</button
+        ><em><br />在文本域内输入文本或html代码，将显示预览到下面。</em
         ><button id="cbutton" onclick="nltext()">br</button>
         <button id="cbutton" onclick="ctext()">clear</button>
         <button id="rbutton" onclick="rpage()">refresh-page</button>
-        <button id="vbutton" onclick="vtext()">view</button>
       </div>
       <textarea id="text1"></textarea>
       <div id="viewarea"></div>
