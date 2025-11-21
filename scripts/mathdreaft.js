@@ -347,15 +347,6 @@ function mflinetable() {
   textArea.selectionEnd = length - 133;
   textArea.focus();
 }
-function ctomarkdown() {
-  var textArea = document.getElementById("text1");
-  textArea.addEventListener("input", (event) => {
-    var output = document.getElementById("viewarea");
-    output.innerHTML = marked(event.target.value);
-  });
-  textArea.selectionEnd = textArea.value.length;
-  textArea.focus();
-}
 function nltext() {
   document.getElementById("text1").value =
     document.getElementById("text1").value + "<br />";
