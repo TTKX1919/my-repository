@@ -1,7 +1,7 @@
 window.onload = function autoviewtext() {
   var textArea = document.getElementById("text1");
   textArea.value =
-    "示例：<br />例题1：方程组<math><mrow><mo>{</mo><mtable><mtr><mtd><mn>x<sup>2</sup>+y=3 &#9312;</mn></mtd></mtr><mtr><mtd><mn>x<sup>2</sup>-y=1 &#9313;</mn></mtd></mtr></mtable></mrow></math>求x,y的值。  <br />解：&#9312;+&#9313;得,2x<sup>2</sup>=4,x=&#177;<math><mroot><mi>2</mi><mn></mn></mroot></math>;将x的值代入&#9312;得y=1;<br />&#8756;方程组的解为x=<math><mroot><mi>2</mi><mn></mn></mroot></math>,y=1或x=-<math><mroot><mi>2</mi><mn></mn></mroot></math>,y=1";
+    "示例：<br />例题1：方程组<math><mrow><mo>{</mo><mtable><mtr><mtd><mn>x<sup>2</sup>+y=3 &#9312;</mn></mtd></mtr><mtr><mtd><mn>x<sup>2</sup>-y=1 &#9313;</mn></mtd></mtr></mtable></mrow></math>求x,y的值。";
   textArea.addEventListener("input", (event) => {
     var output = document.getElementById("viewarea");
     output.innerHTML = event.target.value;
