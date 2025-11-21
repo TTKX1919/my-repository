@@ -8,6 +8,7 @@
     <link href="images/logo.ico" rel="icon" type="image/x-icon" />
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
     <script src="scripts/mathdreaft.js"></script>
+    <script src="scripts/main.js"></script>
   </head>
   <body>
     <header id="header">
@@ -51,11 +52,11 @@
       <a href="yangsheng.html">养生宝典</a>
     </nav>
     <main id="main">
-      <div id="blank"></div>
+      <div id="blank1"></div>
       <div id="buttons">
         <h1>这是一个用来记草稿的<abbr>html页面</abbr>：</h1>
         <em
-          >点击黑色按钮在文本末尾添加html实体字符；点击br按钮在文本末尾添加换行符；点击clear按钮清空文本域；<br />点击refresh-page按钮刷新页面；在文本域内输入文本或html代码，将显示预览到下面。</em
+          >点击黑色按钮在文本末尾添加html实体字符；点击br按钮在文本末尾添加换行符；<br />点击clear按钮清空文本域；点击refresh-page按钮刷新页面；<br />在文本域内输入文本或html代码，将显示预览到下面；点击clear按钮清除示例；在文本框内点击键盘上的空格键显示示例。</em
         ><button class="buttons" onclick="msup()">sup</button
         ><button class="buttons" onclick="msub()">sub</button
         ><button class="buttons" onclick="msqrt()">
@@ -90,13 +91,20 @@
         ><button class="buttons" onclick="mloequal()">&#8804;</button
         ><button class="buttons" onclick="mgoequal()">&#8805;</button
         ><button class="buttons" onclick="mperpendicular()">&#8869;</button
-        ><button id="cbutton" onclick="nltext()">br</button>
-        <button id="cbutton" onclick="ctext()">clear</button>
+        ><button class="mnlinetable" onclick="mtlinetable()">
+          &#123;两行矩阵</button
+        ><button class="mnlinetable" onclick="mthlinetable()">
+          &#123;三行矩阵</button
+        ><button class="mnlinetable" onclick="mflinetable()">
+          &#123;四行矩阵</button
+        ><button id="mdownbutton" onclick="ctomarkdown()">markdown</button>
         <button id="rbutton" onclick="rpage()">refresh-page</button>
+        <button class="cbutton" onclick="nltext()">br</button>
+        <button class="cbutton" onclick="ctext()">clear</button>
       </div>
       <textarea id="text1"></textarea>
       <div id="viewarea"></div>
     </main>
-    <footer></footer>
+    <footer><div id="blank2"></div></footer>
   </body>
 </html>
