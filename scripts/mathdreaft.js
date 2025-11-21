@@ -1,7 +1,7 @@
 window.onload = function autoviewtext() {
   var textArea = document.getElementById("text1");
   textArea.value =
-    "示例：2<math><mroot><mi>x</mi><mn></mn></mroot></math>=y x=100 &#8756;y=2<math><mroot><mi>100</mi><mn></mn></mroot></math>=20 <!--点击clear按钮清除示例；在文本框内点击键盘上的空格键显示示例-->";
+    "示例：<br />例题1：方程组<math><mrow><mo>{</mo><mtable><mtr><mtd><mn>x<sup>2</sup>+y=3 &#9312;</mn></mtd></mtr><mtr><mtd><mn>x<sup>2</sup>-y=1 &#9313;</mn></mtd></mtr></mtable></mrow></math>求x,y的值。  <br />解：&#9312;+&#9313;得,2x<sup>2</sup>=4,x=&#177;<math><mroot><mi>2</mi><mn></mn></mroot></math>;将x的值代入&#9312;得y=1;<br />&#8756;方程组的解为x=<math><mroot><mi>2</mi><mn></mn></mroot></math>,y=1或x=-<math><mroot><mi>2</mi><mn></mn></mroot></math>,y=1";
   textArea.addEventListener("input", (event) => {
     var output = document.getElementById("viewarea");
     output.innerHTML = event.target.value;
@@ -306,6 +306,54 @@ function mperpendicular() {
   });
   const length = textArea.value.length;
   textArea.selectionEnd = length;
+  textArea.focus();
+}
+function mtlinetable() {
+  var textArea = document.getElementById("text1");
+  textArea.value =
+    textArea.value +
+    "<math><mrow><mo>{</mo><mtable><mtr><mtd><mn></mn></mtd></mtr><mtr><mtd><mn></mn></mtd></mtr></mtable></mrow></math>";
+  textArea.addEventListener("input", (event) => {
+    var output = document.getElementById("viewarea");
+    output.innerHTML = event.target.value;
+  });
+  const length = textArea.value.length;
+  textArea.selectionEnd = length - 71;
+  textArea.focus();
+}
+function mthlinetable() {
+  var textArea = document.getElementById("text1");
+  textArea.value =
+    textArea.value +
+    "<math><mrow><mo>{</mo><mtable><mtr><mtd><mn></mn></mtd></mtr><mtr><mtd><mn></mn></mtd></mtr><mtr><mtd><mn></mn></mtd></mtr></mtable></mrow></math>";
+  textArea.addEventListener("input", (event) => {
+    var output = document.getElementById("viewarea");
+    output.innerHTML = event.target.value;
+  });
+  const length = textArea.value.length;
+  textArea.selectionEnd = length - 102;
+  textArea.focus();
+}
+function mflinetable() {
+  var textArea = document.getElementById("text1");
+  textArea.value =
+    textArea.value +
+    "<math><mrow><mo>{</mo><mtable><mtr><mtd><mn></mn></mtd></mtr><mtr><mtd><mn></mn></mtd></mtr><mtr><mtd><mn></mn></mtd></mtr><mtr><mtd><mn></mn></mtd></mtr></mtable></mrow></math>";
+  textArea.addEventListener("input", (event) => {
+    var output = document.getElementById("viewarea");
+    output.innerHTML = event.target.value;
+  });
+  const length = textArea.value.length;
+  textArea.selectionEnd = length - 133;
+  textArea.focus();
+}
+function ctomarkdown() {
+  var textArea = document.getElementById("text1");
+  textArea.addEventListener("input", (event) => {
+    var output = document.getElementById("viewarea");
+    output.innerHTML = marked(event.target.value);
+  });
+  textArea.selectionEnd = textArea.value.length;
   textArea.focus();
 }
 function nltext() {
