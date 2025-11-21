@@ -9,6 +9,15 @@ a:hover {
   color: #f00000;
 }
 
+.cedition {
+  text-decoration: none;
+  font-size: 18px;
+  color: red;
+}
+.cedition:hover {
+  color: orange;
+}
+
 #header {
   display: flex;
   max-width: 1360px;
