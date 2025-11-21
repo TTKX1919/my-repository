@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="Wilson" />
+    <title>mathdraft-m</title>
+    <link href="images/logo.ico" rel="icon" type="image/x-icon" />
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <script src="scripts/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <a id="logo" class="item" href="index.html"
+        ><img id="imgdh" src="images/logo.png"
+      /></a>
+      <form
+        id="bingForm"
+        class="item"
+        method="get"
+        action=""
+        accept-charset="utf-8"
+      >
+        <input
+          type="text"
+          id="txtbing"
+          name="q"
+          size="10"
+          maxlength="100%"
+          value=""
+        />
+        <input type="hidden" id="hida" name="hl" value="zh-CN" />
+        <input type="hidden" id="hidb" name="ie" value="GB2312" />
+        <input
+          type="submit"
+          id="subbing"
+          name="btnG"
+          value="Bing"
+          formaction="http://cn.bing.com/search"
+        />
+      </form>
+    </header>
+    <nav id="nav">
+      <a href="https://www.1d9z.com">一点就转</a>
+      <a href="https://allmyfaves.com">Allmyfaves</a>
+      <a href="https://www.ai-dh.com">AIDH</a>
+      <a href="https://www.chiff.com">Chiff</a>
+      <a href="https://www.similarsites.com/">Similarsites</a>
+      <a href="mathdraft.html">mathdraft</a>
+      <a href="notes/01-初中数学-黄冈中学/000-目录.html">初中数学笔记</a>
+      <a href="yangsheng.html">养生宝典</a>
+    </nav>
+    <main id="main">
+      <div id="blank1"></div>
+      <div id="buttons">
+        <h1>这是用来记草稿的<abbr>html页面</abbr>的markdown语法版本：</h1>
+        <em
+          >点击clear按钮清空文本域；点击refresh-page按钮刷新页面；<br />在文本域内输入markdown代码，将显示预览到下面；<br />点击clear按钮清除示例；在文本框内点击键盘上的空格键显示示例；点击mathdraft链接切换到本页面的html语法版本。</em
+        >
+        <button id="rbutton" onclick="rpage()">refresh-page</button>
+        <button class="cbutton" onclick="ctext()">clear</button
+        ><a class="cedition" href="mathdraft.html">mathdraft</a>
+      </div>
+      <textarea id="text1"></textarea>
+      <div id="viewarea"></div>
+    </main>
+    <footer><div id="blank2"></div></footer>
+  </body>
+</html>
