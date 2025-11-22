@@ -94,6 +94,7 @@ a:hover {
 }
 
 #viewarea {
+  display: inline-block;
   width: 1360px;
   height: 260px;
   margin: auto;
