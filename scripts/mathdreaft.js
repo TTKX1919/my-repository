@@ -99,28 +99,6 @@ function mcthree() {
   textArea.selectionEnd = length;
   textArea.focus();
 }
-function mcfour() {
-  var textArea = document.getElementById("text1");
-  textArea.value = textArea.value + "&#9315;";
-  textArea.addEventListener("input", (event) => {
-    var output = document.getElementById("viewarea");
-    output.innerHTML = event.target.value;
-  });
-  const length = textArea.value.length;
-  textArea.selectionEnd = length;
-  textArea.focus();
-}
-function mcfive() {
-  var textArea = document.getElementById("text1");
-  textArea.value = textArea.value + "&#9316;";
-  textArea.addEventListener("input", (event) => {
-    var output = document.getElementById("viewarea");
-    output.innerHTML = event.target.value;
-  });
-  const length = textArea.value.length;
-  textArea.selectionEnd = length;
-  textArea.focus();
-}
 function mcesign() {
   var textArea = document.getElementById("text1");
   textArea.value = textArea.value + "&#128;";
@@ -345,6 +323,18 @@ function mflinetable() {
   });
   const length = textArea.value.length;
   textArea.selectionEnd = length - 133;
+  textArea.focus();
+}
+function mfrac() {
+  var textArea = document.getElementById("text1");
+  textArea.value =
+    textArea.value + "<math><mfrac><ms>n</ms><ms>m</ms></mfrac></math>";
+  textArea.addEventListener("input", (event) => {
+    var output = document.getElementById("viewarea");
+    output.innerHTML = event.target.value;
+  });
+  const length = textArea.value.length;
+  textArea.selectionEnd = length - 30;
   textArea.focus();
 }
 function nltext() {
