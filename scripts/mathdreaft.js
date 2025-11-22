@@ -9,6 +9,28 @@ window.onload = function autoviewtext() {
   textArea.selectionEnd = textArea.value.length;
   textArea.focus();
 };
+function mlt() {
+  var textArea = document.getElementById("text1");
+  textArea.value = textArea.value + "&#60;";
+  textArea.addEventListener("input", (event) => {
+    var output = document.getElementById("viewarea");
+    output.innerHTML = event.target.value;
+  });
+  const length = textArea.value.length;
+  textArea.selectionEnd = length;
+  textArea.focus();
+}
+function mgt() {
+  var textArea = document.getElementById("text1");
+  textArea.value = textArea.value + "&#62;";
+  textArea.addEventListener("input", (event) => {
+    var output = document.getElementById("viewarea");
+    output.innerHTML = event.target.value;
+  });
+  const length = textArea.value.length;
+  textArea.selectionEnd = length;
+  textArea.focus();
+}
 function msup() {
   var textArea = document.getElementById("text1");
   textArea.value = textArea.value + "<sup></sup>";
