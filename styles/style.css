@@ -6,7 +6,7 @@ a:link {
   color: #000000;
 }
 a:hover {
-  color: #f00000;
+  color: orange;
 }
 
 .cedition {
@@ -18,16 +18,6 @@ a:hover {
   color: orange;
 }
 
-#header {
-  display: flex;
-  max-width: 1360px;
-  min-width: 15%;
-  height: 30px;
-  margin: auto;
-  flex-wrap: wrap;
-  padding-top: 20px;
-}
-
 #logo {
   width: 150px;
 }
@@ -37,7 +27,7 @@ a:hover {
 }
 
 #txtbing {
-  width: 165px;
+  width: 265px;
   height: 27px;
   font-size: 16px;
   border: 0px solid black;
@@ -76,21 +66,13 @@ a:hover {
   background: orange;
 }
 
-#nav {
-  display: flex;
-  width: 900px;
-  margin-left: 20;
-  margin-top: 2px;
-  flex-wrap: wrap;
-  gap: 5px 40px;
-}
-
 #main {
   display: flex;
   max-width: 1060px;
   min-width: 15%;
   margin: auto;
   flex-wrap: wrap;
+  gap: 0px 10px;
 }
 
 #blank1 {
